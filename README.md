@@ -23,6 +23,8 @@ DIVIDE([Total Sales],CALCULATE([Total Sales],ALLEXCEPT('Calendar','Calendar'[Yea
 Avg Monthly (per Year)
 AVERAGEX(ALL('Calendar'[Month]), [Monthly Avg Sales])
 
+
+
 Seasonal Index
 DIVIDE([Monthly Avg Sales],AVERAGEX(ALL('Calendar'[Month]), [Monthly Avg Sales]),0)
 
